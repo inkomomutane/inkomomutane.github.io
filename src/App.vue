@@ -1,4 +1,5 @@
 <template>
+
   <header>
     <nav class="bg-slate-400 border-gray-200 dark:bg-gray-900">
       <div
@@ -227,6 +228,10 @@ import { watch } from "vue";
 const { t,i18next } = useTranslation();
 import collect from 'collect.js';
 
+
+
+
+
 const lang = ref<string>('en');
 const ptCountryCodes = collect(['PT', 'BR', 'CV', 'GW', 'MZ', 'ST', 'TL', 'AO', 'MO', 'GQ']);
 
@@ -240,9 +245,9 @@ onMounted(async () => {
     const triggerEl = document.getElementById("dropdownLocaleButton");
     console.log(targetEl);
     const dropdown = new Dropdown(targetEl, triggerEl);
-    dropdown.hide();
+    dropdown.hide(); 
   });
-  
+
     try {
         const response = await fetch('https://ipapi.co/json/');
         const data = await response.json();

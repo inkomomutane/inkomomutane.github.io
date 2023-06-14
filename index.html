@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="/me.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Alexandre Mutane - Software Developer</title>
-    <meta type="description" content="I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects."/>
-    
-    <!-- OpenGraph Tags -->
-    <meta property="og:title" content="Nelson Alexandre Mutane - Software Developer">
-    <meta property="og:description" content="I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/nelson-mutane">
-    <meta property="og:image" content="https://example.com/nelson-mutane.jpg">
-    
-    <!-- Microdata -->
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Nelson Alexandre Mutane",
-        "jobTitle": "Software Developer",
-        "description": "I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects.",
-        "url": "https://example.com/nelson-mutane",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://example.com/nelson-mutane.jpg"
-        },
-        "sameAs": [
-          "https://github.com/nelsonmutane",
-          "https://linkedin.com/in/nelsonmutane",
-          "https://twitter.com/nelsonmutane"
-        ]
-      }
-    </script>
-  </head>
-  <body class="dark selection:bg-green-600 selection:text-white">
-    <div id="app" class=""></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/me.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nelson Alexandre Mutane - Software Developer</title>
+  <meta type="description"
+    content="I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects." />
+
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Nelson Alexandre Mutane - Software Developer">
+  <meta property="og:description"
+    content="I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/nelson-mutane">
+  <meta property="og:image" content="https://example.com/nelson-mutane.jpg">
+
+  <!-- Microdata -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Nelson Alexandre Mutane",
+      "jobTitle": "Software Developer",
+      "description": "I'm a Software Developer specializing in web development and passionate about creating efficient and user-friendly applications. Check out my portfolio to see some of my projects.",
+      "url": "https://example.com/nelson-mutane",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://example.com/nelson-mutane.jpg"
+      },
+      "sameAs": [
+        "https://github.com/nelsonmutane",
+        "https://linkedin.com/in/nelsonmutane",
+        "https://twitter.com/nelsonmutane"
+      ]
+    }
+  </script>
+  <script preload>
+    window.onload = function(){
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'none';
+     };  
+   </script>
+</head>
+<body class="dark selection:bg-green-600 selection:text-white">
+  <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-gray-800 z-50 flex items-center justify-center">
+    <div class="max-w-xl mx-auto">
+      <div class="p-4 bg-gray-600 border border-gray-700 rounded-md">
+        <div class="flex">
+          <div class="mr-4 bg-gray-400 border border-gray-400 h-16 w-16 rounded animate-pulse"></div>
+          <div class="space-y-1 flex flex-col w-full">
+            <div class="flex w-full flex items-center">
+              <div class="bg-gray-400 border border-gray-400 w-60 h-5 animate-pulse"></div>
+              <div class="ml-4 bg-ternary w-12 h-5 animate-pulse"></div>
+            </div>
+            <div class="bg-gray-400 border border-gray-400 w-36 h-5 animate-pulse"></div>
+            <div
+              class="bg-gray-400 border border-gray-400 w-full h-44 animate-pulse grid justify-items-center items-center">
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse"></div>
+            <span class="bg-tertiary h-1 w-1 rounded animate-pulse"></span>
+            <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse">
+
+            </div>
+          </div>
+          <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="app" class=""></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
 </html>
