@@ -1,6 +1,6 @@
 <template>
 
-  <header class="sticky top-0">
+  <header class="sticky top-0 z-40">
     <nav class="bg-slate-400 border-gray-200 dark:bg-gray-900">
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
@@ -197,6 +197,7 @@
       </div>
     </nav>
   </header>
+
   <section class="dark:bg-gray-800 bg-slate-100 dark:text-gray-100">
 		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 			<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -215,6 +216,8 @@
 			</div>
 		</div>
 	</section>
+
+
   <section class="dark:bg-gray-950 bg-slate-100 dark:text-gray-100" id="services">
 		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 
@@ -228,20 +231,31 @@
           {{ t('service_desc') }}
         </p>
 			</div>
-			<div class="grid grid-cols-1  p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 w-full">      
-        <article class="bg-gray-800 w-full p-8 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
+			<div class="grid grid-cols-1  p-6 mt-8 lg:mt-0 h-fit  w-full">      
+        <article class="bg-gray-800 w-full p-4 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
           <h1 class="font-thin text-green-400 text-2xl drop-shadow-md" itemprop="headline">Front-End</h1>
           <p class="text-base font-thin mt-2" itemprop="description">{{ t('frontent_p') }}</p>
         </article>
-        <article class="bg-gray-800 w-full p-8 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
+        <article class="bg-gray-800 w-full p-4 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
           <h1 class="font-thin text-green-400 text-2xl drop-shadow-md" itemprop="headline">Backend-End</h1>
           <p class="text-base font-thin mt-2" itemprop="description">{{ t('backend_p') }}</p>
+        </article>
+        <article class="bg-gray-800 w-full p-4 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
+          <h1 class="font-thin text-green-400 text-2xl drop-shadow-md" itemprop="headline">API</h1>
+          <p class="text-base font-thin mt-2" itemprop="description">{{ t('api_p') }}</p>
         </article>
 			</div>
 		</div>
 	</section>
 
 
+  <footer class="bg-white shadow  dark:bg-gray-800" itemscope itemtype="http://schema.org/WPFooter">
+  <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Copyright © <span itemprop="publisher" itemscope itemtype="http://schema.org/Person">
+    <strong itemprop="name">{{t('my_name')}}™</strong> {{ (new Date()).getFullYear() }} </span>
+    {{ t('copyright') }}</span>
+  </div>
+</footer>
 
 </template>
 <script setup lang="ts">
