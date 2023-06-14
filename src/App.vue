@@ -196,8 +196,27 @@
       </div>
     </nav>
   </header>
+  <section class="dark:bg-gray-800 bg-slate-100 dark:text-gray-100">
+		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+			<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+        <div class="mx-auto lg:mx-0 border-green-600 border border-spacing-1 gap-2 p-1 w-fit text-center mb-4">
+          <span class="dark:text-white  p-2 text-base font-semibold bg-green-400 w-fit">
+            Full-Stack-Developer
+          </span>
+        </div>
+				<h1 class="text-5xl  font-bold leading-none sm:text-6xl">{{ t('my_short_name') }}</h1>
+				<p class="mt-6 mb-8 text-lg sm:mb-12">
+          {{ t('description') }}
+        </p>
+			</div>
+			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+				<img src="./assets/me.webp" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full">
+			</div>
+		</div>
+	</section>
 
-  <h1>{{ t("my_name") }}</h1>
+
+
 </template>
 <script setup lang="ts">
 import { Dropdown } from "flowbite";
