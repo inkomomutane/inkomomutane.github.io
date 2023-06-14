@@ -225,15 +225,16 @@ import { useTranslation } from "i18next-vue";
 import { ref } from "vue";
 import { watch } from "vue";
 const { t,i18next } = useTranslation();
+import collect from 'collect.js';
 
 const lang = ref<string>('en');
+const ptCountryCodes = collect(['PT', 'BR', 'CV', 'GW', 'MZ', 'ST', 'TL', 'AO', 'MO', 'GQ']);
 
  function changeLanguageSelection(lang:string){
      i18next.changeLanguage(lang);
-          window.history.pushState({}, '', '/' + lang);
  }
 
-onMounted(() => {
+onMounted(async () => {
   addEventListener("DOMContentLoaded", function () {
     const targetEl = document.getElementById("dropdownLocale");
     const triggerEl = document.getElementById("dropdownLocaleButton");
@@ -241,24 +242,30 @@ onMounted(() => {
     const dropdown = new Dropdown(targetEl, triggerEl);
     dropdown.hide();
   });
-
-
-  const path = window.location.pathname; // Get the current URL path
-    if (path === '/en' || path === '/en/') {
-      lang.value = 'en'; // Change the variable value for /en path
-    } else if (path === '/pt' || path === '/pt/' ) {
-      lang.value = 'pt';// Change the variable value for /pt path
-    }else{
-      lang.value = 'en'; 
-    }
+  
+    try {
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        getLanguageCode(data.country);
+      } catch (error) {
+        console.error(error);
+      }
 
 });
+
+function getLanguageCode(code:string){
+  if(ptCountryCodes.contains(code)){
+    i18next.changeLanguage('pt');
+  }else{
+    i18next.changeLanguage('en');    
+  }
+}
 
 watch(() => lang.value,() => {
   console.log(lang.value);
-  
   i18next.changeLanguage(lang.value);
 });
+
 
 
 
