@@ -211,7 +211,7 @@
         </p>
 			</div>
 			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-				<img src="./assets/me.webp" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full">
+				<img src="./assets/me.webp" alt="Nelson Alexandre Mutane picture" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full">
 			</div>
 		</div>
 	</section>
@@ -227,6 +227,53 @@ import { ref } from "vue";
 import { watch } from "vue";
 const { t,i18next } = useTranslation();
 import collect from 'collect.js';
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: t('my_name'),
+  meta: [
+    {
+      name: 'description',
+      content: t('description'),
+    },
+    {
+      name: 'image',
+      content: 'https://inkomomutane.github.io/me.webp',
+    },
+    {
+      property : 'og:title',
+      content :  t('my_name')
+    },
+    {
+      property : 'og:description',
+      content :  t('description')
+    },
+    {
+      property : 'og:type',
+      content :  'website'
+    },
+    {
+      property : 'og:image',
+      content :  'https://inkomomutane.github.io/me.webp'
+    },
+    {
+      property : 'og:url',
+      content :  'https://inkomomutane.github.io'
+    },
+    {
+      property : 'og:site:name',
+      content :  t('my_name') + ' - Portfolio'
+    },
+    {
+      property : 'og:locale',
+      content :  'en'
+    },
+    {
+      property : 'og:locale:alternate',
+      content :  'pt'
+    },
+  ],
+})
 
 
 
