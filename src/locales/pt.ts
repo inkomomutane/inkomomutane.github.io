@@ -1,5 +1,6 @@
 export const pt = {
     "my_name" : "Nelson Alexandre Mutane",
+    "address": "Moçambique",
     "my_short_name" : "Nelson Mutane",
     "services" : "Serviços",
     "works": "Trabalhos",
