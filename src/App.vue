@@ -1,6 +1,6 @@
 <template>
 
-  <header>
+  <header class="sticky top-0">
     <nav class="bg-slate-400 border-gray-200 dark:bg-gray-900">
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
@@ -212,6 +212,31 @@
 			</div>
 			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 				<img src="./assets/me.webp" alt="Nelson Alexandre Mutane picture" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full">
+			</div>
+		</div>
+	</section>
+  <section class="dark:bg-gray-950 bg-slate-100 dark:text-gray-100" id="services">
+		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+
+			<div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+        <div class="mx-auto lg:mx-0 border-green-600 border border-spacing-1 gap-2 p-1 w-fit text-center mb-4">
+          <span class="dark:text-white  py-0 px-5  w-fit text-3xl  font-bold leading-none sm:text-6xl">
+            {{ t('services') }}
+          </span>
+        </div>
+				<p class="mt-6 mb-8 text-lg sm:mb-12">
+          {{ t('service_desc') }}
+        </p>
+			</div>
+			<div class="grid grid-cols-1  p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 w-full">      
+        <article class="bg-gray-800 w-full p-8 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
+          <h1 class="font-thin text-green-400 text-2xl drop-shadow-md" itemprop="headline">Front-End</h1>
+          <p class="text-base font-thin mt-2" itemprop="description">{{ t('frontent_p') }}</p>
+        </article>
+        <article class="bg-gray-800 w-full p-8 h-fit shadow-lg rounded mb-2 hover:bg-gray-900 hover:shadow-2xl" itemscope itemtype="http://schema.org/Article">
+          <h1 class="font-thin text-green-400 text-2xl drop-shadow-md" itemprop="headline">Backend-End</h1>
+          <p class="text-base font-thin mt-2" itemprop="description">{{ t('backend_p') }}</p>
+        </article>
 			</div>
 		</div>
 	</section>
