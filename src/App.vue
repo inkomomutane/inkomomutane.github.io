@@ -207,11 +207,11 @@
           </span>
         </div>
 				<h1 class="text-5xl  font-bold leading-none sm:text-6xl">{{ t('my_short_name') }}</h1>
-				<p class="mt-6 mb-8 text-lg sm:mb-12">
+				<p class="mt-6 mb-0 lg:mb-8 text-lg sm:mb-12">
           {{ t('description') }}
         </p>
 			</div>
-			<div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+			<div class="flex items-center justify-center p-6 mt-0 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
 				<img src="./assets/me.webp" alt="Nelson Alexandre Mutane picture" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 rounded-full">
 			</div>
 		</div>
@@ -248,8 +248,53 @@
 		</div>
 	</section>
 
+  <section class="dark:bg-gray-900 bg-slate-100 dark:text-gray-100"  id="works">
+		<div class="container grid  grid-cols-1 justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+      <div class="mx-auto lg:mx-0 border-green-600 border border-spacing-1 gap-2 p-1 w-fit text-center mb-4">
+          <span class="dark:text-white  py-0 px-5  w-fit text-3xl  font-bold leading-none sm:text-6xl">
+            {{ t('works') }}
+          </span>
+      </div>
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center">
+        <a href="https://mimovel.com" class="mb-4  transition-transform duration-300 transform-gpu hover:scale-110">
+          <article class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-2 md:mt-8 mx-4">
+                  <img class="rounded-t-lg" src="./assets/jobs/mimovel.webp" alt="Mimóvel - website" />
+              <section class="p-5">
+                <h1 class="mb-2 text-lg font-thin tracking-tight text-white  line-clamp-1">Mimóvel - Website</h1>
+              </section>
+          </article>
+        </a>
+        <a href="https://sumburero.org" class="mb-4  transition-transform duration-300 transform-gpu hover:scale-110">
+          <article class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-2 md:mt-8 mx-4">
+                  <img class="rounded-t-lg" src="./assets/jobs/sumburero.webp" alt="Sumburero - website" />
+              <section class="p-5">
+                <h1 class="mb-2 text-lg font-thin tracking-tight text-white  line-clamp-1">Sumburero - Website</h1>
+              </section>
+          </article>
+        </a>
+        <a href="https://agreed.co.mz" class="mb-4  transition-transform duration-300 transform-gpu hover:scale-110">
+          <article class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-2 md:mt-8 mx-4">
+                  <img class="rounded-t-lg" src="./assets/jobs/agreed.webp" alt="Agreed Logistics - website" />
+              <section class="p-5">
+                <h1 class="mb-2 text-lg font-thin tracking-tight text-white  line-clamp-1">Agreed Logistics - Website</h1>
+              </section>
+          </article>
+        </a>
+        <div  class="mb-4  transition-transform duration-300 transform-gpu hover:scale-110">
+          <article class="max-w-sm bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mt-2 md:mt-8 mx-4">
+                  <img class="rounded-t-lg" src="./assets/jobs/biosp.webp" alt="Biosp - Mobile Aplication" />
+              <section class="p-5">
+                <h1 class="mb-2 text-lg font-thin tracking-tight text-white line-clamp-1">Biosp - {{ t('mobile_app') }}</h1>
+              </section>
+          </article>
+        </div>
+      </div>
+		</div>
+	</section>
+
 
   <footer class="bg-white shadow  dark:bg-gray-800" itemscope itemtype="http://schema.org/WPFooter" id="contacts">
+  
   <div class="w-full mx-auto max-w-screen-xl p-4 md:flex justify-center md:items-center md:justify-between text-center md:text-left">
     <span class="text-sm text-gray-500 text-center dark:text-gray-400">Copyright © <span itemprop="publisher" itemscope itemtype="http://schema.org/Person">
     <strong itemprop="name">{{t('my_name')}}™</strong> {{ (new Date()).getFullYear() }} </span>
@@ -283,6 +328,7 @@
     </ul>
 
   </div>
+
 </footer>
 
 </template>

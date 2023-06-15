@@ -5,6 +5,7 @@ export const en  = {
     "address": "Mozambique",
     "works": "Works",
     "notes": "Notes",
+    'mobile_app': "Mobile aplication",
     "copyright": "All Rights Reserved",
     "contacts": "Contacts",
     "description" : "Hi there! I'm Nelson Alexandre Mutane, a passionate full-stack developer with over 4 years of experience. I specialize in web development using stacks like Laravel, Vue, Statamic and more..., crafting powerful web applications. Let's work together to turn your ideas into reality and create unforgettable digital experiences!",
