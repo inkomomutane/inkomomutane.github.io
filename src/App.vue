@@ -339,7 +339,6 @@ import { useTranslation } from "i18next-vue";
 import { ref } from "vue";
 import { watch } from "vue";
 const { t,i18next } = useTranslation();
-import collect from 'collect.js';
 import { useHead } from '@vueuse/head'
 
 useHead({
@@ -393,7 +392,6 @@ useHead({
 
 
 const lang = ref<string>('en');
-const ptCountryCodes = collect(['PT', 'BR', 'CV', 'GW', 'MZ', 'ST', 'TL', 'AO', 'MO', 'GQ']);
 
  function changeLanguageSelection(lang:string){
      i18next.changeLanguage(lang);
@@ -407,31 +405,10 @@ onMounted(async () => {
     const dropdown = new Dropdown(targetEl, triggerEl);
     dropdown.hide(); 
   });
-
-    try {
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        getLanguageCode(data.country);
-      } catch (error) {
-        console.error(error);
-      }
-
 });
-
-function getLanguageCode(code:string){
-  if(ptCountryCodes.contains(code)){
-    i18next.changeLanguage('pt');
-  }else{
-    i18next.changeLanguage('en');    
-  }
-}
-
 watch(() => lang.value,() => {
   console.log(lang.value);
   i18next.changeLanguage(lang.value);
 });
-
-
-
 
 </script>
