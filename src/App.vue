@@ -531,13 +531,11 @@ onMounted(async () => {
   addEventListener("DOMContentLoaded", function () {
     const targetEl = document.getElementById("dropdownLocale");
     const triggerEl = document.getElementById("dropdownLocaleButton");
-    console.log(targetEl);
     const dropdown = new Dropdown(targetEl, triggerEl);
     dropdown.hide(); 
   });
 });
 watch(() => lang.value,() => {
-  console.log(lang.value);
   i18next.changeLanguage(lang.value);
 });
 
