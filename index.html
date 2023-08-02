@@ -7,6 +7,12 @@
   <meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <link rel="canonical" href="https://inkomomutane.github.io">
   <!-- Microdata -->
+  <script preload>
+    window.onload = function(){
+      const preloader = document.getElementById('preloader');
+      preloader.style.display = 'none';
+     };  
+   </script>
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -25,44 +31,132 @@
       ]
     }
   </script>
-  <script preload>
-    window.onload = function(){
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-     };  
-   </script>
+
 </head>
-<body class="dark selection:bg-green-600 selection:text-white">
-  <div id="preloader" class="fixed top-0 left-0 w-full h-full bg-gray-800 z-50 flex items-center justify-center">
-    <div class="max-w-xl mx-auto">
-      <div class="p-4 bg-gray-600 border border-gray-700 rounded-md">
-        <div class="flex">
-          <div class="mr-4 bg-gray-400 border border-gray-400 h-16 w-16 rounded animate-pulse"></div>
-          <div class="space-y-1 flex flex-col w-full">
-            <div class="flex w-full flex items-center">
-              <div class="bg-gray-400 border border-gray-400 w-60 h-5 animate-pulse"></div>
-              <div class="ml-4 bg-ternary w-12 h-5 animate-pulse"></div>
-            </div>
-            <div class="bg-gray-400 border border-gray-400 w-36 h-5 animate-pulse"></div>
+<body class="dark selection:bg-green-600 selection:text-white ">
+  <div id="preloader" class="fixed  w-full h-full bg-gray-800 z-50 ">
+    <div class="">
+      <nav class="bg-slate-400 border-gray-200 dark:bg-gray-900">
+        <div
+          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+        >
+          <div
+            class="flex items-center"
+          >
             <div
-              class="bg-gray-400 border border-gray-400 w-full h-44 animate-pulse grid justify-items-center items-center">
+              class=" p-4 mr-3 bg-slate-200  rounded-full animate-pulse"              
+            ></div>
+
+            <div
+              class=" py-3 px-16 self-center text-2xl font-semibold whitespace-nowrap text-white hidden sm:flex bg-slate-400 animate-pulse"
+              ></div
+            >
+          </div>
+          <div class="flex items-center text-white">
+            <div
+              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+            ></div>
+            <div
+              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+            ></div>
+            <div
+              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+            ></div>
+            <div
+              class="shadow-sm ml-2 p-3 bg-slate-200 rounded-full animate-pulse"
+            ></div>
+            <div
+              id="dropdownLocale"
+              class="z-20 hidden max-w-sm bg-white divide-y divide-gray-100 shadow dark:bg-gray-800 dark:divide-gray-700"
+              aria-labelledby="dropdownLocaleButton"
+            >
+              <div class="divide-y divide-gray-100 dark:divide-gray-700">
+                <button
+                  @click="changeLanguageSelection('en')"
+                  class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="w-max">
+                    <div class="text-xs text-blue-600 dark:text-blue-500">EN</div>
+                  </div>
+                </button>
+              </div>
+              <div class="divide-y divide-gray-100 dark:divide-gray-700">
+                <button
+                  
+                  @click="changeLanguageSelection('pt')"
+                  class="flex px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div class="w-max">
+                    <div class="text-xs text-blue-600 dark:text-blue-500">PT</div>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
+      </nav>
+      <nav class="bg-gray-200 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+          <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 mr-6 space-x-4 text-sm">
+              <li>
+                <div
+                  class="py-2 w-16 bg-slate-400 animate-pulse"
+                  
+                  ></div
+                >
+              </li>
+              <li>
+                <div
+                  class="py-2 w-16 bg-slate-400 animate-pulse"
+                  
+                  ></div
+                >
+              </li>
+              <li>
+                <div
+                  class="py-2 w-16 bg-slate-400 animate-pulse"
+                  
+                  ></div
+                >
+              </li>
+              <li>
+                <div
+                  class="py-2 w-16 bg-slate-400 animate-pulse"
+                  
+                  ></div
+                >
+              </li>
+              
 
-        <div class="mt-4 flex items-center justify-between">
-          <div class="flex items-center gap-2">
-            <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse"></div>
-            <span class="bg-tertiary h-1 w-1 rounded animate-pulse"></span>
-            <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse">
-
-            </div>
+              
+              
+              
+            </ul>
           </div>
-          <div class="bg-gray-400 border border-gray-400 w-16 h-5 animate-pulse"></div>
+        </div>
+      </nav>
+    </div>
+    <section class="dark:bg-gray-800 bg-slate-100 dark:text-gray-100">
+      <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <div class="mx-auto w-72 animate-pulse lg:mx-0  gap-2 p-1 mb-4">
+            <span class="p-1 px-24 bg-green-300 animate-pulse"> </span>
+          </div>
+          <div class="bg-slate-400 animate-pulse py-4 px-32"></div>
+          <div class="mt-6 mb-0 lg:mb-8 sm:mb-12">
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+           <div class="py-1 px-44 bg-slate-400 animate-pulse mb-2"></div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center p-6 mt-0 w-full lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 bg-slate-500 animate-pulse">
         </div>
       </div>
-    </div>
-
+    </section>
   </div>
 
   <div id="app" class=""></div>
