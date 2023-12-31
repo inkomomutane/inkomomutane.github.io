@@ -8,7 +8,7 @@ export const en  = {
     'mobile_app': "Mobile aplication",
     "copyright": "All Rights Reserved",
     "contacts": "Contacts",
-    "description" : "Hi there! I'm Nelson Alexandre Mutane, a passionate full-stack developer with over 4 years of experience. I specialize in web development using stacks like Laravel, Vue, Statamic and more..., crafting powerful web applications. Let's work together to turn your ideas into reality and create unforgettable digital experiences!",
+    "description" : "Hello! I'm Nelson Alexandre Mutane, a full-stack developer fueled by passion and driven by over 5 years of expertise. My realm of specialization lies in the dynamic world of web development, where I expertly maneuver through stacks like Laravel, Vue, and Statamic, among others. I'm dedicated to transforming the intricate web of your ideas into tangible, robust web applications. Let's collaborate to forge unique digital experiences that leave a lasting impression!",
     "service_desc" : "I offer comprehensive software development solutions tailored to meet your needs. With extensive experience in full-stack development, I am equipped to deliver powerful and customized web applications using the latest technologies. From concept to implementation, my focus is on providing intuitive interfaces, optimized performance, and exceptional results.",
     "frontent_p": "I create captivating and responsive user interfaces that engage and delight.",
     "backend_p": "I create highly efficient and scalable systems. From robust architecture to database optimization and seamless integrations, I ensure exceptional performance and data security. ",

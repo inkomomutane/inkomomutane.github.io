@@ -217,6 +217,126 @@
 		</div>
 	</section>
 
+  <section class="dark:bg-gray-900 bg-slate-100 dark:text-gray-100">
+    <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:flex-row lg:justify-between">
+      <div class="flex flex-col justify-center p-6  rounded-sm w-full lg:text-left">
+        <div class="mx-auto lg:mx-0 border-slate-600 border border-spacing-1 gap-2 p-1 w-fit text-center mb-12">
+          <span class="dark:text-white  py-0 px-5  w-fit text-3xl text-center  font-bold leading-none sm:text-6xl">
+            Certifications
+          </span>
+
+        </div>
+        <ol class="relative  grid  sm:grid-cols-2 2xl:grid-cols-3">
+
+          <li class="mb-10 ms-4">
+             <div class="flex  items-start ">
+              <img src="./assets/images/tecnicol.jpeg" class="w-16 h-16">
+              <div class="flex-col content-start justify-items-start m-2 mx-3 mt-0 items-start">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Tecnicol Moçambique Lda</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-200">
+                  <strong>Course</strong> - Computer Mounting and Repair.</p>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-200 dark:text-gray-200"><strong>Issued</strong> - March 2016</time>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1Jt1RRxisu1U5OArpHGqlkhybf2CRqBBo/view?usp=sharing"
+               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-[2px] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+              <span class="mx-2">Credential</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="mb-10 ms-4">
+            <div class="flex  items-start ">
+              <img src="./assets/images/microsoft.png" class="w-16 h-16">
+              <div class="content-start justify-items-start m-2 mx-3 mt-0">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Microsoft + Linkedin</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-200 text-start">
+                  <strong>Course</strong> - Career Essentials in Software Development.</p>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-200 dark:text-gray-200"><strong>Issued</strong> - Sep 2023</time>
+              </div>
+            </div>
+            <a href="https://www.linkedin.com/learning/certificates/50df75c1a91fdcc01f8763a9bdd8803bc9cdaa94307cbf626401ce47795bb2ab?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BzDkvckKUTE25ObfZUTrY7A%3D%3D"
+               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-[2px] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+              <span class="mx-2">Credential</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="mb-10 ms-4">
+            <div class="flex  items-start ">
+              <img src="./assets/images/code_camp.jpeg" class="w-16 h-16">
+              <div class="content-start justify-items-start m-2 mx-3 mt-0">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">FreeCodeCamp</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-200 text-start">
+                  <strong>Course</strong> - JavaScript Algorithms and Data Structures.</p>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-200 dark:text-gray-200"><strong>Issued</strong> - Sep 2023</time>
+              </div>
+            </div>
+            <a href="https://freecodecamp.org/certification/nelson_mutane/javascript-algorithms-and-data-structures"
+               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-[2px] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+              <span class="mx-2">Credential</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <g>
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+        </ol>
+
+      </div>
+
+    </div>
+     </section>
+  <section class="dark:bg-gray-800 bg-slate-100 dark:text-gray-100">
+    <div class="container flex flex-col justify-center p-6 mx-auto lg:flex-row lg:justify-between">
+  <div class="container flex flex-col justify-center p-6 mx-auto  lg:flex-row lg:justify-between">
+    <div class="flex flex-col justify-center p-6  rounded-sm w-full lg:text-left">
+      <div class="mx-auto lg:mx-0 border-slate-600 border border-spacing-1 gap-2 p-1 w-fit text-center mb-12">
+          <span class="dark:text-white  py-0 px-5  w-fit text-3xl text-center  font-bold leading-none sm:text-6xl">
+            Education
+          </span>
+
+      </div>
+      <ol class="relative  grid  sm:grid-cols-2 2xl:grid-cols-3">
+
+        <li class="mb-10 ms-4">
+          <div class="flex  items-start ">
+            <img src="./assets/images/unizambeze.png" class="w-16 h-16 bg-white p-2">
+            <div class="flex-col content-start justify-items-start m-2 mx-3 mt-0 items-start">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Universidade Zambeze</h3>
+              <p class="text-base font-normal text-gray-500 dark:text-gray-200">
+                <strong>Degree</strong> - Computer Engineering.</p>
+              <time class="mb-1 text-sm font-normal leading-none text-gray-200 dark:text-gray-200"><strong>Finalist student </strong> - 2024</time>
+            </div>
+          </div>
+          <!--            <a href="https://drive.google.com/file/d/1Jt1RRxisu1U5OArpHGqlkhybf2CRqBBo/view?usp=sharing"-->
+          <!--               class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-[2px] hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">-->
+          <!--              <span class="mx-2">Credential</span>-->
+          <!--              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">-->
+          <!--                <g>-->
+          <!--                  <path fill="none" d="M0 0h24v24H0z"></path>-->
+          <!--                  <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"></path>-->
+          <!--                </g>-->
+          <!--              </svg>-->
+          <!--            </a>-->
+        </li>
+
+      </ol>
+
+    </div>
+  </div>
+    </div>
+  </section>
 
   <section class="dark:bg-gray-950 bg-slate-100 dark:text-gray-100" id="services">
 		<div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
