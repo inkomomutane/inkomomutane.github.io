@@ -33,12 +33,13 @@
   </script>
 
 </head>
-<body class="dark selection:bg-green-600 selection:text-white ">
+<body class="bg-slate-950 selection:bg-green-600 selection:text-white " >
+
   <div id="preloader" class="fixed  w-full h-full bg-gray-800 z-50 ">
     <div class="">
       <nav class="bg-slate-400 border-gray-200 dark:bg-gray-900">
         <div
-          class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
+          class="flex flex-wrap justify-between items-center mx-auto max-w-(--breakpoint-xl) p-4"
         >
           <div
             class="flex items-center"
@@ -54,20 +55,20 @@
           </div>
           <div class="flex items-center text-white">
             <div
-              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+              class="shadow-xs mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
             ></div>
             <div
-              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+              class="shadow-xs mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
             ></div>
             <div
-              class="shadow-sm mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
+              class="shadow-xs mx-2 p-3 bg-slate-200 rounded-full animate-pulse"
             ></div>
             <div
-              class="shadow-sm ml-2 p-3 bg-slate-200 rounded-full animate-pulse"
+              class="shadow-xs ml-2 p-3 bg-slate-200 rounded-full animate-pulse"
             ></div>
             <div
               id="dropdownLocale"
-              class="z-20 hidden max-w-sm bg-white divide-y divide-gray-100 shadow dark:bg-gray-800 dark:divide-gray-700"
+              class="z-20 hidden max-w-sm bg-white divide-y divide-gray-100 shadow-sm dark:bg-gray-800 dark:divide-gray-700"
               aria-labelledby="dropdownLocaleButton"
             >
               <div class="divide-y divide-gray-100 dark:divide-gray-700">
@@ -96,7 +97,7 @@
         </div>
       </nav>
       <nav class="bg-gray-200 dark:bg-gray-700">
-        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="max-w-(--breakpoint-xl) px-4 py-3 mx-auto">
           <div class="flex items-center">
             <ul class="flex flex-row font-medium mt-0 mr-6 space-x-4 text-sm">
               <li>
@@ -139,7 +140,7 @@
     </div>
     <section class="dark:bg-gray-800 bg-slate-100 dark:text-gray-100">
       <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-        <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+        <div class="flex flex-col justify-center p-6 text-center rounded-xs lg:max-w-md xl:max-w-lg lg:text-left">
           <div class="mx-auto w-72 animate-pulse lg:mx-0  gap-2 p-1 mb-4">
             <span class="p-1 px-24 bg-green-300 animate-pulse"> </span>
           </div>
@@ -160,6 +161,9 @@
   </div>
 
   <div id="app" class=""></div>
+
   <script type="module" src="/src/main.ts"></script>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </html>
