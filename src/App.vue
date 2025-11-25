@@ -1,8 +1,10 @@
 <template>
-  <vue-particles
-      id="tsparticles"
-      @particles-loaded="particlesLoaded"
-      :options="{
+ <div class="absolute">
+   <div class="relative">
+     <vue-particles
+         id="tsparticles"
+         @particles-loaded="particlesLoaded"
+         :options="{
                     background: {
                         color: {
                             value: '#0d47a1'
@@ -73,14 +75,18 @@
                     },
                     detectRetina: true
                 }"
-  >
-    <div class="bg-slate-900">
-      <div class="bg-white max-w-screen-lg h-full mx-auto min-h-screen">
+     >
 
-      </div>
-    </div>
+     </vue-particles>
+   </div>
+   <div>
+     <div class="bg-slate-900">
+       <div class="bg-white max-w-screen-lg h-full mx-auto min-h-screen">
 
-  </vue-particles>
+       </div>
+     </div>
+   </div>
+ </div>
 
 </template>
 <script setup lang="ts">
