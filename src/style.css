@@ -1,7 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poly:ital@0;1&display=swap')
+
 layer(base);
 @import 'tailwindcss';
 @import "tw-animate-css";
+
+
+@font-face {
+    font-family: 'Poly';
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/poly_median.woff2") format("woff2");
+}
+
+
+@font-face {
+    font-family: 'Poly';
+    font-style: normal;
+    font-weight: 900;
+    src: url("./fonts/poly_median.woff2") format("woff2");
+}
+
 /*
   ---break---
 */
