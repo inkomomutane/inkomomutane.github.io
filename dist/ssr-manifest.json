@@ -163,6 +163,10 @@
   ],
   "node_modules/@vueuse/head/dist/index.mjs": [
   ],
+  "node_modules/@vueuse/shared/dist/index.js": [
+  ],
+  "node_modules/clsx/dist/clsx.mjs": [
+  ],
   "node_modules/flowbite/lib/esm/components/accordion/index.js": [
   ],
   "node_modules/flowbite/lib/esm/components/carousel/index.js": [
@@ -195,6 +199,40 @@
   ],
   "node_modules/i18next/dist/esm/i18next.js": [
   ],
+  "node_modules/lucide-vue-next/dist/esm/Icon.js": [
+  ],
+  "node_modules/lucide-vue-next/dist/esm/createLucideIcon.js": [
+  ],
+  "node_modules/lucide-vue-next/dist/esm/defaultAttributes.js": [
+  ],
+  "node_modules/lucide-vue-next/dist/esm/icons/send.js": [
+  ],
+  "node_modules/lucide-vue-next/dist/esm/shared/src/utils.js": [
+  ],
+  "node_modules/reka-ui/dist/Avatar/AvatarFallback.js": [
+  ],
+  "node_modules/reka-ui/dist/Avatar/AvatarImage.js": [
+  ],
+  "node_modules/reka-ui/dist/Avatar/AvatarRoot.js": [
+  ],
+  "node_modules/reka-ui/dist/Avatar/utils.js": [
+  ],
+  "node_modules/reka-ui/dist/Primitive/Primitive.js": [
+  ],
+  "node_modules/reka-ui/dist/Primitive/Slot.js": [
+  ],
+  "node_modules/reka-ui/dist/shared/createContext.js": [
+  ],
+  "node_modules/reka-ui/dist/shared/renderSlotFragments.js": [
+  ],
+  "node_modules/reka-ui/dist/shared/useForwardExpose.js": [
+  ],
+  "node_modules/reka-ui/node_modules/@vueuse/core/index.mjs": [
+  ],
+  "node_modules/reka-ui/node_modules/@vueuse/shared/index.mjs": [
+  ],
+  "node_modules/tailwind-merge/dist/bundle-mjs.mjs": [
+  ],
   "node_modules/unhead/dist/index.mjs": [
   ],
   "node_modules/vite-ssg/dist/client/single-page.mjs": [
@@ -208,6 +246,20 @@
   "src/App.vue": [
   ],
   "src/App.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/ui/avatar/Avatar.vue": [
+  ],
+  "src/components/ui/avatar/Avatar.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/ui/avatar/AvatarFallback.vue": [
+  ],
+  "src/components/ui/avatar/AvatarFallback.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/components/ui/avatar/AvatarImage.vue": [
+  ],
+  "src/components/ui/avatar/AvatarImage.vue?vue&type=script&setup=true&lang.ts": [
+  ],
+  "src/lib/utils.ts": [
   ],
   "src/locales/en.ts": [
   ],
