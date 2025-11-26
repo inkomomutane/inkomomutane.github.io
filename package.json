@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@intlify/unplugin-vue-i18n": "^0.11.0",
+    "@tsparticles/engine": "^3.9.1",
     "@tsparticles/slim": "^3.9.1",
     "@tsparticles/vue3": "^3.0.1",
     "caniuse-lite": "^1.0.30001572",
@@ -20,6 +21,7 @@
     "i18next-vue": "^2.1.1",
     "lucide-vue-next": "^0.554.0",
     "tailwind-merge": "^3.4.0",
+    "tsparticles": "^3.9.1",
     "vue": "^3.2.47",
     "vue-i18n": "^9.3.0-beta.19",
     "vue-router": "^4.2.2"

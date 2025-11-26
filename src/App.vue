@@ -1,20 +1,16 @@
 <template>
- <div class="relative">
+
+ <div class="relative min-h-screen">
    <div class="absolute z-30 w-full opacity-20 ">
      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 450" opacity="0.46"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
        <feGaussianBlur stdDeviation="130" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="150" ry="125.5" cx="207.0166654901799" cy="41.72063431070973" fill="hsla(167, 72%, 60%, 0.55)"></ellipse><ellipse rx="150" ry="125.5" cx="612.536461720109" cy="21.16634478461458" fill="hsla(167, 72%, 60%, 0.58)"></ellipse><ellipse rx="150" ry="125.5" cx="420.31604841715443" cy="129.05519104003906" fill="hsla(167, 72%, 60%, 0.50)"></ellipse></g></svg>
    </div>
-   <div class="absolute">
-     <vue-particles
-         id="tsparticles"
-         @particles-loaded="particlesLoaded"
-         :options="particles"
-     >
-     </vue-particles>
+   <div class="absolute z-40 w-full  ">
+     <div id="js-particles"></div>
    </div>
    <div class="relative">
      <div class="bg-slate-900/90">
-       <div class="bg-white/5 max-w-screen-lg  mx-auto  min-h-screen outline outline-1 outline-slate-700 " >
+       <div class="bg-white/5 max-w-screen-lg  mx-auto   outline outline-1 outline-slate-700 " >
 
 
          <div class="-mx-4 flex flex-wrap p-8">
@@ -482,8 +478,9 @@
 </template>
 <script setup lang="ts">
 import { useTranslation } from "i18next-vue";
-const { t,i18next } = useTranslation();
+const { t } = useTranslation();
 import { useHead } from '@vueuse/head'
+import {onMounted} from "vue";
 useHead({
   title: t('my_name'),
   meta: [
@@ -529,50 +526,62 @@ useHead({
     },
   ],
 })
+ onMounted(() => {
+   const getParticleSettings = () => {
+     const isMobile = window.innerWidth < 768;
+     return {
+       particles: {
+         number: {
+           value: 120,
+           density: {
+             enable: true,
+             value_area: 500
+           }
+         },
+         color: {
+           value: "#ffffff"
+         },
+         opacity: {
+           value: 0.49,
+           random: false,
+           anim: {
+             enable: true,
+             speed: 0.2,
+             opacity_min: 0.1,
+             sync: false
+           }
+         },
+         size: {
+           value: 2,
+           random: true,
+           anim: {
+             enable: true,
+             speed: 0.3,
+             size_min: 0.5,
+             sync: false
+           }
+         },
+         line_linked: {
+           enable: false
+         },
+         move: {
+           enable: !isMobile, // Desativa movimento no mobile
+           speed: isMobile ? 0 : 0.1,
+           random: true,
+           straight: false,
+           out_mode: "out"
+         }
+       },
+       retina_detect: true
+     };
+   };
 
-const particles = {
-  particles: {
-    number: {
-      value: 120,
-      density: {
-        enable: true,
-        value_area: 500
-      }
-    },
-    color: {
-      value: "#ffffff"
-    },
-    opacity: {
-      value: 0.49,
-      random: false,
-      anim: {
-        enable: true,
-        speed: 0.2,
-        opacity_min: 0.1,
-        sync: false
-      }
-    },
-    size: {
-      value: 2,
-      random: true,
-      anim: {
-        enable: true,
-        speed: 0.3,
-        size_min: 0.5,
-        sync: false
-      }
-    },
-    line_linked: {
-      enable: false
-    },
-    move: {
-      enable: true, // Desativa movimento no mobile
-      speed:  0.1,
-      random: true,
-      straight: false,
-      out_mode: "out"
-    }
-  },
-  retina_detect: true
-}
+   particlesJS("js-particles", getParticleSettings());
+
+   window.addEventListener("resize", () => {
+     particlesJS("js-particles", getParticleSettings());
+   });
+
+ })
+
 </script>
